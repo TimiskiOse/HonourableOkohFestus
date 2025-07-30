@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 const media = () => {
@@ -5,14 +6,9 @@ const media = () => {
     <>
       <Navbar />
 
-      <div className="bg-[#1AA4DF] text-white h-40 ">
-        <p className=" font-playfair font-extrabold text-4xl text-center py-4">
+      <div className="bg-[url('/mediaBanner.svg')] bg-cover h-[340px] flex items-center w-full">
+        <p className="text-white font-playfair font-extrabold text-6xl pl-[180px]">
           MEDIA
-        </p>
-        <p className="text-sm font-playfair mt-4 text-center">
-          Stay updated with the latest news and events featuring Hon. Okoh
-          Festus Chukwuyem. Our media section provides insights into his
-          initiatives, community engagements, and public appearances.
         </p>
       </div>
 
@@ -27,6 +23,7 @@ const media = () => {
         <img src="/media/media 8.svg" alt="Media Image" />
         <img src="/media/media 9.svg" alt="Media Image" />
       </div>
+      <Footer />
     </>
   );
 };

@@ -58,7 +58,7 @@ const App = () => {
       </div>
 
       {/*IKASOUTH SECTION*/}
-      <div className="flex flex-row justify-between items-center mt-10 mx-20">
+      <div className="flex flex-row justify-between items-center mt-5 mb-20 mx-20">
         <div className="flex flex-col justify-center items-start w-[50%]">
           <h1 className="text-3xl font-playfair font-bold mb-2">
             Welcome to Ika South Constituency
