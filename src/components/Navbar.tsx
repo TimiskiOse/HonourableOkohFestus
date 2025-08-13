@@ -55,7 +55,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden fixed top-0 right-0 h-full w-3/4 max-w-xs bg-[#56534E] shadow-lg transform transition-transform duration-300 ease-in-out ${
+        className={`md:hidden fixed top-0 right-0 h-full w-3/4 max-w-xs bg-[#56534E] shadow-lg transform transition-transform duration-300 ease-in-out z-50 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -68,7 +68,7 @@ const Navbar = () => {
               <li key={path}>
                 <NavLink
                   to={path}
-                  onClick={toggleMenu}
+                  onClick={() => setIsOpen(false)} // ✅ Closes menu on click
                   className={({ isActive }) =>
                     `block w-fit hover:border-b-2 border-b-[#1AA4DF] ${
                       isActive ? "border-b-2" : ""
@@ -83,10 +83,10 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Overlay when menu is open */}
+      {/* Overlay */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-opacity-40 z-40"
+          className="fixed inset-0 z-40"
           onClick={toggleMenu}
         />
       )}
