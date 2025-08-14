@@ -20,7 +20,7 @@ const aboout = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="bg-[#1AA4DF] h-auto md:h-[340px] flex items-center justify-center px-4"
+        className="bg-[#1AA4DF] h-40 md:h-[340px] flex items-center justify-center px-4"
       >
         <p className="font-playfair text-white font-extrabold text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-center py-6 ">
           THE DEPUTY LEADER OF THE HOUSE <br className="hidden md:block" />

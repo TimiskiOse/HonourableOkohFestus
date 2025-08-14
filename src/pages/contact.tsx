@@ -19,7 +19,7 @@ const contact = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="bg-[#1AA4DF] h-auto md:h-[340px] flex items-center justify-center px-4"
+        className="bg-[#1AA4DF] h-40 md:h-[340px] flex items-center justify-center px-4"
       >
         <p className="text-white font-playfair font-extrabold text-2xl sm:text-4xl lg:text-6xl text-center py-4">
           CONTACT
