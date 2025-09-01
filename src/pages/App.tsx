@@ -151,11 +151,15 @@ const App = () => {
           >
             Ika South Local Government Area in Delta State, Nigeria, is an
             administrative division created to improve local governance and
-            service delivery. It's home to the Ika people, who are an Igbo
-            subgroup primarily found in Delta and Edo States. The Ika people are
-            a mix of different tribes that gradually formed their distinct
-            identity. While many Ika people are Christians, traditional
-            practices are still common among older generations.
+            service delivery.
+            
+            <br/> The Ika people are a mix of different tribes that
+            gradually formed their distinct identity and are known for their
+            hard work, unity, and progressive spirit.While many Ika people are
+            Christians, traditional practices are still common among older
+            generations. <br/> Together, we can transform Ika South into a hub of
+            development where every community thrives, every voice is heard, and
+            every citizen shares in the promise of a brighter future.
           </motion.p>
         </div>
         <motion.img
@@ -165,7 +169,7 @@ const App = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.4 }}
           viewport={{ once: true }}
-          className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover rounded-lg"
+          className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-contain rounded-lg"
         />
       </motion.div>
       <Footer />

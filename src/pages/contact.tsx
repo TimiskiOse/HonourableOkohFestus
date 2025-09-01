@@ -26,54 +26,70 @@ const contact = () => {
         </p>
       </motion.div>
 
-      {/* INTRODUCTION SECTION */}
       <motion.section
         initial={{ opacity: 0, x: -40 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true, amount: 0.3 }}
-        className="flex md:flex-row flex-col justify-between items-center my-20 mx-6 md:mx-20 gap-8"
+        className="flex flex-col items-center mt-10 mb-20 mx-6 md:mx-20 gap-8"
       >
-        <motion.img
-          src="/Honourable.svg"
-          alt="Okoh Festus Chukwuyem"
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.9, delay: 0.15 }}
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
-          className="w-64 h-64 md:w-96 md:h-96 object-cover rounded-full"
-        />
+          custom={0.2}
+        >
+          <h1 className="text-lg md:text-3xl font-playfair font-bold">
+            Contact Hon. Okoh Festus Chukwuyem
+          </h1>
+        </motion.div>
 
-        <div className="flex flex-col justify-center items-start w-full md:w-[40%] text-center md:text-left">
-          <motion.div
-            variants={fadeUp}
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          custom={0.2}
+          className="bg-[#1AA4DF] w-full text-white py-12 px-6 md:px-20 flex justify-center rounded-lg"
+        >
+          <motion.form
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            custom={0.2}
+            custom={0.3}
+            className="flex flex-col gap-6 w-full max-w-xl font-playfair "
           >
-            <h1 className="text-2xl md:text-3xl font-playfair font-bold mb-2">
-              Hon. Okoh Festus Chukwuyem
-            </h1>
-            <p className="text-base md:text-lg font-playfair font-medium text-[#1AA4DF]">
-              Deputy Majority Leader
-            </p>
-          </motion.div>
+            {/* Name Input */}
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="bg-white text-black rounded-lg px-4 py-3 w-full outline-none focus:ring-2 focus:ring-[#56534E] placeholder-black"
+            />
 
-          <motion.p
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            custom={0.4}
-            className="text-sm md:text-base font-playfair mt-4 leading-relaxed"
-          >
-            I, Hon. Okoh Festus Chukwuyem, was born on January 29th, 1971, and I
-            am a Nigerian politician currently serving as the Deputy Majority
-            Leader of the Delta State House of Assembly. I represent the Ika
-            South Constituency under the Peoples Democratic Party (PDP).
-          </motion.p>
-        </div>
+            {/* Email Input */}
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="bg-white text-black rounded-lg px-4 py-3 w-full outline-none focus:ring-2 focus:ring-[#56534E] placeholder-black"
+            />
+
+            {/* Message Input */}
+            <textarea
+              rows={5}
+              placeholder="Your Message"
+              className="bg-white text-black rounded-lg px-4 py-3 w-full outline-none focus:ring-2 focus:ring-[#56534E] placeholder-black"
+            ></textarea>
+
+            {/* Button */}
+            <button
+              type="submit"
+              className="bg-[#56534E] text-white font-semibold text-lg px-6 py-3 rounded-lg hover:bg-white hover:text-[#56534e] transition w-fit self-center"
+            >
+              Send Message
+            </button>
+          </motion.form>
+        </motion.div>
       </motion.section>
 
       <Footer />

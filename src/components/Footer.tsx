@@ -76,6 +76,34 @@ const Footer = () => {
             <img src="./icon/mail.svg" className="w-4 h-4 mr-2" />
             <p className="text-sm">chukydandy2004@yahoo.com</p>
           </div>
+
+          <a
+            href="https://www.facebook.com/share/1CeQ8a5jwZ/?mibextid=wwXIfr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-row items-center hover:text-[#56534E] transition-colors duration-300"
+          >
+            <img
+              src="./icon/facebook.svg"
+              className="w-4 h-4 mr-2"
+              alt="Facebook"
+            />
+            <p className="text-sm">Chuky Dandy</p>
+          </a>
+
+          <a
+            href="https://www.instagram.com/chukydandy?igsh=MTlhOXppenp1NGI5cg=="
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-row items-center hover:text-[#56534E] transition-colors duration-300"
+          >
+            <img
+              src="./icon/instagram.svg"
+              className="w-4 h-4 mr-2"
+              alt="Instagram"
+            />
+            <p className="text-sm">Chuky Dandy</p>
+          </a>
         </motion.div>
 
         {/* Featured Post */}
