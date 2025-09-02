@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import { useNavigate } from "react-router-dom";
 const App = () => {
+  const navigate = useNavigate();
   const textStagger = {
     hidden: { opacity: 0, y: 20 },
     visible: (delay = 0) => ({
@@ -109,9 +111,7 @@ const App = () => {
             whileInView="visible"
             viewport={{ once: true }}
             custom={0.7}
-            onClick={() => {
-              window.location.href = "about";
-            }}
+            onClick={() => navigate("/about")}
             className="mt-6 w-full h-10 md:w-36 rounded-lg bg-[#1AA4DF] hover:bg-[#0d8bbf] transition-all duration-300 flex items-center justify-center"
           >
             <p
