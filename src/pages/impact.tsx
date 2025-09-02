@@ -56,7 +56,7 @@ const impact = () => {
             whileInView="visible"
             viewport={{ once: true }}
             custom={0.2}
-            className="text-2xl md:text-3xl font-playfair font-bold mb-2"
+            className="text-xl md:text-3xl font-playfair font-bold mb-2"
           >
             Welcome to Ika South Constituency
           </motion.h1>
@@ -89,9 +89,9 @@ const impact = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className="font-playfair mx-6 md:mx-20 my-20"
+        className="font-playfair mx-6 md:mx-20 my-10"
       >
-        <p className="text-lg md:text-3xl font-semibold text-center">
+        <p className="text-xl md:text-3xl font-semibold text-center">
           About Ika South
         </p>
 
@@ -206,7 +206,7 @@ const impact = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="mx-6 md:mx-32 my-12"
+        className="mx-6 md:mx-32 my-20"
       >
         <motion.p
           variants={fadeUp}

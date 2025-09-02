@@ -109,14 +109,16 @@ const App = () => {
             whileInView="visible"
             viewport={{ once: true }}
             custom={0.7}
+            onClick={() => {
+              window.location.href = "about";
+            }}
             className="mt-6 w-full h-10 md:w-36 rounded-lg bg-[#1AA4DF] hover:bg-[#0d8bbf] transition-all duration-300 flex items-center justify-center"
           >
-            <a
-              href="about"
-              className=" text-white font-playfair font-bold text-sm md:text-base"
+            <p
+              className="text-white font-playfair font-bold text-sm md:text-base"
             >
               ABOUT ME
-            </a>
+            </p>
           </motion.div>
         </div>
       </motion.div>
