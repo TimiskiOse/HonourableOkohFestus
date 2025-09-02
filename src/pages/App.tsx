@@ -67,7 +67,7 @@ const App = () => {
             whileInView="visible"
             viewport={{ once: true }}
             custom={0}
-            className="text-2xl md:text-3xl font-playfair font-bold mb-2"
+            className="text-xl md:text-3xl font-playfair font-bold mb-2"
           >
             Stand With Me in Advancing a Bold & Transformative Future for Ika
             South
@@ -103,21 +103,21 @@ const App = () => {
             confident we can bring this vision to life.
           </motion.p>
 
-          <motion.button
+          <motion.div
             variants={textStagger}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             custom={0.7}
-            className="mt-6"
+            className="mt-6 w-full h-10 md:w-36 rounded-lg bg-[#1AA4DF] hover:bg-[#0d8bbf] transition-all duration-300 flex items-center justify-center"
           >
             <a
               href="about"
-              className="bg-[#1AA4DF] text-white px-4 py-2 md:px-6 md:py-2 font-playfair font-bold hover:bg-[#0d8bbf] text-sm md:text-base"
+              className=" text-white font-playfair font-bold text-sm md:text-base"
             >
               ABOUT ME
             </a>
-          </motion.button>
+          </motion.div>
         </div>
       </motion.div>
 
@@ -136,7 +136,7 @@ const App = () => {
             whileInView="visible"
             viewport={{ once: true }}
             custom={0}
-            className="text-2xl md:text-3xl font-playfair font-bold mb-2"
+            className="text-xl md:text-3xl font-playfair font-bold mb-2"
           >
             Welcome to Ika South Constituency
           </motion.h1>
@@ -162,6 +162,7 @@ const App = () => {
             every citizen shares in the promise of a brighter future.
           </motion.p>
         </div>
+        <div className="flex flex-col items-center">
         <motion.img
           src="/Ika South Map.svg"
           alt="Ika South Map"
@@ -171,6 +172,8 @@ const App = () => {
           viewport={{ once: true }}
           className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-contain rounded-lg"
         />
+        <p className="font-playfair text-lg md:text-2xl">Map of Ika South</p>
+        </div>
       </motion.div>
       <Footer />
     </>

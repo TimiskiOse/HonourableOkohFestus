@@ -36,15 +36,18 @@ const impact = () => {
         viewport={{ once: true, amount: 0.3 }}
         className="flex flex-col md:flex-row justify-between items-center mt-10 mx-6 md:mx-20 gap-8"
       >
-        <motion.img
-          src="/Ika South Map.svg"
-          alt="Okoh Festus Chukwuyem"
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.9, delay: 0.15 }}
-          viewport={{ once: true }}
-          className="w-72 md:w-96 h-72 md:h-96 object-contain rounded-lg"
-        />
+        <div className="flex flex-col items-center">
+          <motion.img
+            src="/Ika South Map.svg"
+            alt="Ika South Map"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-contain rounded-lg"
+          />
+          <p className="font-playfair text-lg md:text-2xl">Map of Ika South</p>
+        </div>
 
         <div className="flex flex-col justify-center items-start w-full md:w-[50%]">
           <motion.h1
@@ -218,9 +221,18 @@ const impact = () => {
         <div className="flex flex-wrap w-full justify-between mt-10 gap-y-10">
           {[
             { img: "impact 1.svg", text: "Nosiere Primary School II, Agbor." },
-            { img: "impact 2.svg", text: "Isimie Primary School, Alijemisi, Agbor." },
-            { img: "impact 3.svg", text: "Aliogor Primary School, Alisimie, Agbor." },
-            { img: "impact 4.svg", text: "Erigbe Nursery/Primary School, Agbor." },
+            {
+              img: "impact 2.svg",
+              text: "Isimie Primary School, Alijemisi, Agbor.",
+            },
+            {
+              img: "impact 3.svg",
+              text: "Aliogor Primary School, Alisimie, Agbor.",
+            },
+            {
+              img: "impact 4.svg",
+              text: "Erigbe Nursery/Primary School, Agbor.",
+            },
           ].map(({ img, text }, i) => (
             <div
               key={i}
