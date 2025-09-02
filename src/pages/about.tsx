@@ -56,9 +56,9 @@ const aboout = () => {
 
           <p className="text-sm sm:text-base mt-4 font-playfair">
             Hon. Okoh Festus Chukwuyem, was born on January 29th, 1971, and is a
-            Nigerian politician currently serving as the Deputy Majority Leader
-            of the Delta State House of Assembly. I represent the Ika South
-            Constituency under the Peoples Democratic Party (PDP).
+            Nigerian politician currently serving as the Deputy Leader of the House,
+            Delta State House of Assembly. <br /> I represent the Ika
+            South Constituency under the All Progressive Congress (APC).
           </p>
         </motion.div>
       </motion.div>
@@ -192,7 +192,9 @@ const aboout = () => {
             variants={fadeUp}
             custom={0.7}
           >
-            <p className="text-xl sm:text-2xl font-semibold">Trained for Service</p>
+            <p className="text-xl sm:text-2xl font-semibold">
+              Trained for Service
+            </p>
             <p className="text-sm sm:text-base mt-2">
               Hon. Festus Okoh has been a Key player in the growth of his party
               PDP, IKA NATION & Delta State at large; thereby distinguishing

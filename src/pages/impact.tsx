@@ -216,10 +216,17 @@ const impact = () => {
         </motion.p>
 
         <div className="flex flex-wrap w-full justify-between mt-10 gap-y-10">
-          {["impact 3.svg", "impact 2.svg", "impact 4.svg", "impact 1.svg"].map(
-            (img, i) => (
+          {[
+            { img: "impact 1.svg", text: "Nosiere Primary School II, Agbor." },
+            { img: "impact 2.svg", text: "Isimie Primary School, Alijemisi, Agbor." },
+            { img: "impact 3.svg", text: "Aliogor Primary School, Alisimie, Agbor." },
+            { img: "impact 4.svg", text: "Erigbe Nursery/Primary School, Agbor." },
+          ].map(({ img, text }, i) => (
+            <div
+              key={i}
+              className="flex flex-col items-center w-full md:w-[48%] text-center"
+            >
               <motion.img
-                key={i}
                 src={`./impact/${img}`}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -227,8 +234,9 @@ const impact = () => {
                 viewport={{ once: true }}
                 className={i > 1 ? "mt-0 md:mt-10" : ""}
               />
-            )
-          )}
+              <p className="mt-3 text-sm font-playfair font-medium">{text}</p>
+            </div>
+          ))}
         </div>
       </motion.div>
 

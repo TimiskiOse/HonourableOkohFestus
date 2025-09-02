@@ -31,7 +31,7 @@ const contact = () => {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true, amount: 0.3 }}
-        className="flex flex-col items-center mt-10 mb-20 mx-6 md:mx-20 gap-8"
+        className="flex flex-col items-center mt-10 mb-20 mx-6 md:mx-48 gap-8"
       >
         <motion.div
           variants={fadeUp}

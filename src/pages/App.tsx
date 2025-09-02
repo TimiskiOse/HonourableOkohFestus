@@ -112,7 +112,7 @@ const App = () => {
             className="mt-6"
           >
             <a
-              href="/about"
+              href="about"
               className="bg-[#1AA4DF] text-white px-4 py-2 md:px-6 md:py-2 font-playfair font-bold hover:bg-[#0d8bbf] text-sm md:text-base"
             >
               ABOUT ME
